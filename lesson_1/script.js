@@ -1,37 +1,29 @@
-'use strict';
+let num = 50;
 
-
-
-/* let person = {
-    name: "John",
-    age: 25,
-    isMarried: false
+if (num < 49) {
+    console.log("Неверно!");
+} else if (num > 100) {
+    console.log("Много!");
+} else {
+    console.log("Верно!");
 };
 
-console.log(person["name"]);*/
+(num == 50) ? console.log("Верно!") :  console.log("Неверно!");
 
-let arr = ['plum.png','orange.jpg','apple.bmp']
-
-//console.log(arr[2]);
-
-// alert("Hello World!");
-
-/* let answer = +prompt("Есть ли Вам 18 лет?", "Да");
-console.log(typeof(answer));
-
-console.log("arr" + " - object");
-console.log(4 + " - object"); */
-
-/* let incr = 10,
-    decr = 10;
-
-console.log(incr++);
-console.log(decr--);
-console.log(5%2);
-console.log("2" == 2); */
-
-let isCheked = true,
-    isCloze = true;
-
-console.log(isCheked && isCloze);
-
+switch (num) {
+    case num < 49:
+        console.log("Неверно!");
+        break;
+    case num > 100:
+        console.log("Много!");
+        break;
+    case num < 80:
+        console.log("Много!");
+        break;
+    case 50:
+        console.log("Верно!");
+        break;
+    default:
+        console.log("Что-то пошло не так!");
+        break;
+};
